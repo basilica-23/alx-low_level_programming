@@ -1,20 +1,21 @@
 #include <stdio.h>
 /**
- * main -prints all possible different combinations of two digits
- * Return: (0)
+ * main - rints all possible different combinations of three digits
+ *
+ * Return:(0)
  */
 int main(void)
 {
-	int num1, num2;
+	int dig1, dig2;
 
-	for (num1 =  0; num1 < 9; num1++)
+	for (dig1 = 0; dig1 < 9; dig1++)
 	{
-		for (num2 = 0; num2 < 10; num2++)
+		for (dig2 = dig1 + 1; dig2 < 10; dig2++)
 		{
-			putchar((num1 % 9) + '0');
-			putchar((num2 % 10) + '0');
+			putchar((dig1 % 10) + '0');
+			putchar((dig2 % 10) + '0');
 
-			if (num1 == 9 && num2 == 9)
+			if (dig1 == 8 && dig2 == 9)
 				continue;
 			putchar(',');
 			putchar(' ');
