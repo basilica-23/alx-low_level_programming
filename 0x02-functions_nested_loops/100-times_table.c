@@ -9,7 +9,7 @@ void print_times_table(int num)
 
 	if (num >= 0 && num <= 15)
 	{
-		for (n = 0; n <= n; n++)
+		for (n = 0; n <= num; n++)
 		{
 			_putchar('0');
 
@@ -23,7 +23,7 @@ void print_times_table(int num)
 				if (prod <= 99)
 					_putchar(' ');
 				if (prod <= 9)
-					_putchar9(' ');
+					_putchar(' ');
 
 				if (prod >= 100)
 				{
@@ -36,7 +36,7 @@ void print_times_table(int num)
 				}
 				_putchar((prod % 10) + '0');
 			}
-			_putchar('\n')
+			_putchar('\n');
 		}
 	}
 }
