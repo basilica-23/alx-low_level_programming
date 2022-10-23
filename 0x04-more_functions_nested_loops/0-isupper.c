@@ -1,19 +1,15 @@
+
 #include "main.h"
+
 /**
- * _isupper - a function that prints uppercase.
- * @c: letter
- * Return: 1 if c is uppercase, 0 otherwise
+ * _isupper - a function that checks for alphabetic character
+ * @c: single letter input
+ * Return: 1 if c is a letter (lower or uppercase), 0 otherwise
  */
-int _isupper(int c);
+int _isupper(int c)
 {
-	int c;
-
-	for (c = 'a'; c < 'z'; c++)
-	{
-		_putchar("%d\n", c);
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
-	}
-	_putchar("\n");
-	return (0);
+	else
+		return (0);
 }
-
