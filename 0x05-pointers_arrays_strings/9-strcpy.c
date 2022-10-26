@@ -21,4 +21,4 @@ char *_strcpy(char *dest, char *src)
 			count = -1;
 	}
 	return (dest);
-    }
+}
